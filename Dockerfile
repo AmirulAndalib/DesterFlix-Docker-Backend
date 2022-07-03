@@ -14,9 +14,7 @@ RUN apt-get install wget curl python3.9 python3-pip git zip unzip -y
 
 RUN git clone https://github.com/AmirulAndalib/desterflix-main.git desterflix 
 
-RUN cd desterflix
-
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN cd desterflix && pip3 install --no-cache-dir -r requirements.txt
 
 COPY . .
 
